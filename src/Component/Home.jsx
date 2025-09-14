@@ -10,10 +10,10 @@ export const Home = () => {
             <div className="flex flex-col items-center my-30 ">
                 <div className="flex flex-col items-center  ">
                     <h1 className="
-                    text-gray-600 text-8xl mx-30 font-bold font text-center select-none">
+                    text-gray-600 text-7xl md:text-8xl mx-30 font-bold font text-center select-none">
                         Ashwin Chithravel
                         </h1>
-                    <p className="text-4xl my-10 font-bold select-none">Web Developer</p>
+                    <p className="text-3xl md:text-4xl my-10 font-bold select-none">Web Developer</p>
                 </div>
                 <div className="select-none md:px-60 mx-15 md:mx-40 my-20 text-xl text-center">
                     Passionate about creating beautiful, functional, and user-friendly websites using modern technologies like React.js, JavaScript, and responsive design.

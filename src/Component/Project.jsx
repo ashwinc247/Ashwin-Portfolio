@@ -37,7 +37,7 @@ export const Project = () => {
                     A showcase of my work and the technologies I've mastered
                 </p>
             </div>
-            <div className="flex flex-col md:flex-row px-15 md:px-30 mt-20  mx-auto mb-30">
+            <div className="flex flex-col md:flex-row px-8 md:px-60 mt-20  mx-auto mb-30">
                 <div className=" bg-gray-300 p-5 md:p-15 rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl flex-1 shadow-lg">
                     <div className="flex justify-between items-center">
                         <h1 className="text-xl md:text-2xl font-bold mt-5">
@@ -73,14 +73,14 @@ export const Project = () => {
                         </button>
                     </div>
                 </div>
-                <div className="  md:overflow-hidden rounded-b-3xl md:rounded-e-3xl shadow-lg flex-1 min-h-64 md:h-auto ">
-                    <div className="relative min-h-64 md:w-3/4 md:h-full mx-auto">
+                <div className="  md:overflow-hidden md:rounded-e-3xl md:rounded-bl-none rounded-tr-none  rounded-b-3xl shadow-lg flex-1  min-h-64 md:h-auto ">
+                    <div className="relative min-h-64 md:w-3/4 md:h-full mx-auto ">
                         {images.map((img, i) => (
                             <img
                                 key={i}
                                 src={img}
                                 alt={`slide-${i}`}
-                                className={`absolute size-10  inset-0 w-full  h-full object-cover transition-opacity duration-700 ${i === currentIndex ? "opacity-100" : "opacity-0"
+                                className={`absolute size-10  inset-0 w-full  rounded-tr-none rounded-b-3xl md:rounded-b-none  h-full object-cover transition-opacity duration-700 ${i === currentIndex ? "opacity-100" : "opacity-0"
                                     }`}
                             />
                         ))}

@@ -114,7 +114,7 @@ export const Contact = (sueccess, failed) => {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} className="p-15 bg-gray-200 rounded-2xl md:col-span-2 mt-20 md:mt-0 ms-0 md:ms-5">
+                <form ref={form} onSubmit={sendEmail} className="p-10 bg-gray-200 rounded-2xl md:col-span-2 mt-20 md:mt-0 ms-0 md:ms-5">
                     <h1 className="text-2xl font-bold mb-10">Send Me a Message</h1>
                     <div className="flex gap-2">
                         <div className="flex-1">
