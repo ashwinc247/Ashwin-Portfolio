@@ -4,55 +4,57 @@ import { Link } from "react-router";
 
 
 
-export const Contact = () => {
+export const Contact = (sueccess, failed) => {
 
     const public_key = "466WlVcxs7r4-4vRL";
     const service_id = "service_ec4wu0w";
     const template_id = "template_qok2rcp";
 
-   
-  const form = useRef();
-  const [status, setStatus] = useState("");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
+    const form = useRef();
+    const [status, setStatus] = useState("");
 
-    emailjs
-      .sendForm(service_id,   // from EmailJS dashboard
-        template_id,  // from EmailJS dashboard
-        form.current,
-        public_key    // EmailJS Public key
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setStatus("Message Sent Successfully ✅");
-          form.current.reset();
-          console.log(status);
-          alert(status, "Message Sent Successfully ✅")
-        },
-        (error) => {
-          console.error(error.text);
-          setStatus("Failed to send ❌");
-          console.log(status);
-         alert(status,"Failed to send ❌")
-        }
-      );
-  };
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+
+        emailjs
+            .sendForm(service_id,   // from EmailJS dashboard
+                template_id,  // from EmailJS dashboard
+                form.current,
+                public_key    // EmailJS Public key
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    setStatus("Message Sent Successfully ✅");
+                    form.current.reset();
+                    console.log(status);
+
+                    alert(status, "Message Sent Successfully ✅")
+                },
+                (error) => {
+                    console.error(error.text);
+                    setStatus("Failed to send ❌");
+                    console.log(status);
+
+                    alert(status, "Failed to send ❌")
+                }
+            );
+    };
 
 
 
     return (
         <>
 
-            <div className="text-center">
+            <div className="text-center select-none">
                 <h1 className="text-4xl font-bold mt-20">Get In Touch</h1>
                 <p className="text-xl my-[5vh]">Have a Project in mind or want to collaborate? i'd love to hear from you!</p>
             </div>
-            <div className="grid grid-cols-3  mx-80 ">
-                <div className="flex flex-col ">
-                    <div className="p-5 bg-gray-200 rounded-2xl mb-5">
+            <div className=" grid grid-cols-1 md:grid-cols-3   sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 m-5">
+                <div className="flex flex-col md:col-span-1">
+                    <div className="p-10 bg-gray-200 rounded-2xl mb-5">
                         <h1 className="text-2xl font-bold">Contact Information</h1>
                         <div className="mt-5">
                             <div className="m-2 flex">
@@ -78,9 +80,9 @@ export const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="p-5 bg-gray-200 rounded-2xl">
+                    <div className="p-10 bg-gray-200 rounded-2xl">
                         <h1 className="text-2xl font-bold">Follow Me</h1>
-                        <div className="flex mt-5 ">
+                        <div className="flex mt-5 flex-wrap ">
                             <a href="https://github.com/ashwinc247/chitravel-codes-portfolio" target="blank" rel="noopener noreferrer"><svg className="h-12 w-12 m-2 p-3 bg-blue-400 rounded-xl" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                                 <title>github [#142]</title>
@@ -112,26 +114,29 @@ export const Contact = () => {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} className="p-5 bg-gray-200 rounded-2xl col-span-2 ms-5">
+                <form ref={form} onSubmit={sendEmail} className="p-15 bg-gray-200 rounded-2xl md:col-span-2 mt-20 md:mt-0 ms-0 md:ms-5">
                     <h1 className="text-2xl font-bold mb-10">Send Me a Message</h1>
                     <div className="flex gap-2">
-                        <div>
+                        <div className="flex-1">
                             <p className="text-xs mb-2">Name *</p>
-                            <input name="user_name" required className="border-2 px-[60px] w-[100%] rounded border-blue-500 mb-10 p-2" type="text" />
+                            <input name="user_name" required className=" border-2 w-full rounded border-blue-500 mb-10 p-2" type="text" />
 
                         </div>
-                        <div>
+                        <div className="flex-1">
                             <p className="text-xs mb-2">Email *</p>
-                            <input name="user_email" required className="border-2 px-[60px] w-[100%] rounded border-blue-500 mb-10 p-2 " type="text" />
+                            <input name="user_email" required className="border-2 w-full rounded border-blue-500 mb-10 p-2 " type="text" />
 
                         </div>
 
                     </div>
                     <p className="text-xs mb-2">Subject</p>
-                    <input name="subject" required className="border-2 px-[60px] w-[77%] rounded border-blue-500 mb-10 p-2" type="text" />
+                    <input name="subject" required className="border-2  w-full rounded border-blue-500 mb-10 p-2" type="text" />
                     <p className="text-xs mb-2">Message</p>
-                    <textarea name="message" required className="border-2 px-[60px] w-[77%] rounded border-blue-500 mb-10 p-2"></textarea>
-                    <button type="submit" className="bg-blue-400 w-100  p-3 rounded-2xl text-white  mx-45">Send Message</button>
+                    <textarea name="message" required className="border-2 w-full rounded border-blue-500 mb-10 p-2"></textarea>
+                    
+                    <button type="submit" className="bg-blue-400 w-[50%] text-center p-3 rounded-2xl text-white block  mx-auto ">Send Message</button>
+
+                    
                 </form>
             </div>
 

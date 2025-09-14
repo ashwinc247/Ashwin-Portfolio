@@ -7,6 +7,8 @@ import { Project } from "./Component/Project"
 import "./index.css"
 import { Contact } from "./Component/Contact"
 import { Skill } from "./Component/Skill"
+import { Resume } from "./Component/Resume"
+// import { Toster } from "./Component/Component/Toster"
 // import { TextEffect } from "../components/motion-primitives/text-effect"
 
 
@@ -21,7 +23,7 @@ function App() {
      
       <BrowserRouter>
        <Navbar />
-      
+       {/* <Toster/> */}
         <Routes>
        
           <Route path="/" element={<Home />} />
@@ -29,6 +31,7 @@ function App() {
           <Route path="/skill" element={<Skill/>} />
           <Route path="/project" element={<Project/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/resume" element={<Resume/>} />
         </Routes>
       </BrowserRouter>
     </>

@@ -6,17 +6,17 @@ import { Link } from "react-router"
 
 export const Navbar = () => {
 
-    const [active, setActive] = useState("")
+    const [active, setActive] = useState("hidden")
 
     return (
         <>
             <div className="navbar relative bg-gray-300 flex justify-between p-5 items-center ">
-                <div className="text-4xl text-blue-500 font-bold">
+                <div className="text-4xl text-blue-500 font-bold select-none">
                     As.
                 </div>
                       
                 
-                    <div className="hidden md:block">
+                    <div className="hidden md:block font-medium">
                         <Link to="/" className="mx-10 text-xl">Home</Link>
                         <Link to="/about" className="mx-10 text-xl">About</Link>
                         <Link to="/skill" className="mx-10 text-xl">Skill</Link>
@@ -31,7 +31,7 @@ export const Navbar = () => {
             </div>
             <div className={active} >
                 
-            <div onClick={()=>{setActive("hidden")}} className="absolute md:hidden  bg-gray-300  h-100 w-80 right-3  rounded-2xl flex flex-col justify-center items-center text-2xl  ">
+            <div onClick={()=>{setActive("hidden")}} className=" absolute md:hidden font-medium bg-gray-300  px-20 py-10   rounded-2xl flex flex-col justify-center items-center text-2xl  top-1 right-2 ">
                 
                         <Link to="/" className="my-5 text-4xl ">Home</Link>
                         <Link to="/about" className="my-5 text-4xl">About</Link>
