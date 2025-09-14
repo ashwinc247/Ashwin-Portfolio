@@ -66,7 +66,7 @@ export const Resume = () => {
                 </div>
 
             </div>
-            <div className=" bg-gray-300 mx-auto w-[60%] rounded-2xl p-10 mt-10">
+            <div className=" bg-gray-300 mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
                 <h1 className="text-3xl font-bold">
                     Education
                 </h1>
@@ -81,7 +81,7 @@ export const Resume = () => {
 
 
             </div>
-            <div className=" bg-gray-300 mx-auto w-[60%] rounded-2xl p-10 mt-10 mb-[10vh]">
+            <div className=" bg-gray-300 mx-8 md:mx-[20%] rounded-2xl p-10 mt-10 mb-[10vh]">
                 <h1 className="text-3xl font-bold">
                     Technical Skills
                 </h1>
