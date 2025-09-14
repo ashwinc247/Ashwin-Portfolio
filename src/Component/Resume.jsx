@@ -19,7 +19,7 @@ export const Resume = () => {
                     Download Resume PDF
                 </a>
             </div>
-            <div className="text-center bg-gray-300 mx-auto w-[60%] rounded-2xl mt-20 p-10 md:py-10">
+            <div className="text-center bg-gray-300 mx-8 md:mx-[20%] rounded-2xl mt-20 p-10 md:py-10">
                 <h1 className="pt-2 text-3xl font-bold"> Ashwin Chithravel</h1>
                 <p className="text-xl text-gray-600 mt-2">Web Developer</p>
                 <div className="text-ms flex flex-col md:flex-row gap-3  md:justify-start items-start mt-5">
@@ -38,7 +38,7 @@ export const Resume = () => {
                         India</p>
                 </div>
             </div>
-            <div className=" bg-gray-300 mx-auto w-[60%] rounded-2xl p-10 mt-10">
+            <div className=" bg-gray-300  mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
                 <h1 className="text-3xl font-bold">
                     Experience
                 </h1>
@@ -52,7 +52,7 @@ export const Resume = () => {
                     </p>
                 </div>
             </div>
-            <div className=" bg-gray-300 mx-auto w-[60%] rounded-2xl p-10 mt-10">
+            <div className=" bg-gray-300  mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
                 <h1 className="text-3xl font-bold">
                     Education
                 </h1>
