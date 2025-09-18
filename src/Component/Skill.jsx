@@ -1,4 +1,5 @@
 
+import { AnimatedGroup } from "../../components/motion-primitives/animated-group"
 
 
 export const Skill = () => {
@@ -6,6 +7,34 @@ export const Skill = () => {
     return (
 
         <>
+             <AnimatedGroup
+      variants={{
+        container: {
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.05,
+            },
+          },
+        },
+        item: {
+          hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
+          visible: {
+            opacity: 1,
+            y: 0,
+            filter: 'blur(0px)',
+            transition: {
+              duration: 1.2,
+              type: 'spring',
+              bounce: 0.3,
+            },
+          },
+        },
+      }}
+    >
+
+
             <div className="flex flex-col items-center">
                 <h1 className="text-4xl font-bold mt-20">
                     My Skills
@@ -55,7 +84,7 @@ export const Skill = () => {
                 </div>
                 
             </div>
-
+            </AnimatedGroup>
         </>
     )
 }

@@ -1,10 +1,39 @@
 
 import DownloadImg from "../assets/Resume.png"
+import { AnimatedGroup } from "../../components/motion-primitives/animated-group"
+
 
 export const Resume = () => {
 
     return (
         <>
+         <AnimatedGroup
+        variants={{
+        container: {
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.05,
+            },
+          },
+        },
+        item: {
+          hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
+          visible: {
+            opacity: 1,
+            y: 0,
+            filter: 'blur(0px)',
+            transition: {
+              duration: 1.2,
+              type: 'spring',
+              bounce: 0.3,
+            },
+          },
+        },
+      }}
+    >
+
 
             <div className="text-center">
                 <h1 className="mt-20 text-4xl font-bold text-blue-500">
@@ -124,7 +153,7 @@ export const Resume = () => {
                     </div>
                 </div>
             </div>
-
+            </AnimatedGroup>
         </>
     )
 }

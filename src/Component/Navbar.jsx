@@ -31,7 +31,7 @@ export const Navbar = () => {
             </div>
             <div className={active} >
                 
-            <div onClick={()=>{setActive("hidden")}} className=" absolute md:hidden font-medium bg-gray-300  px-20 py-10   rounded-2xl flex flex-col justify-center items-center text-2xl  top-1 right-2 ">
+            <div onClick={()=>{setActive("hidden")}} className=" absolute md:hidden z-10 font-medium bg-gray-300  px-20 py-10   rounded-2xl flex flex-col justify-center items-center text-2xl  top-1 right-2 ">
                 
                         <Link to="/" className="my-5 text-4xl ">Home</Link>
                         <Link to="/about" className="my-5 text-4xl">About</Link>

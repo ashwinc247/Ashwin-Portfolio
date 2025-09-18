@@ -1,26 +1,57 @@
 import { Link } from "react-router"
 
 
+import { AnimatedGroup } from "../../components/motion-primitives/animated-group"
 
-// class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400"
+
+
+
 export const Home = () => {
     return (
         <>
+         <AnimatedGroup
+      variants={{
+        container: {
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.05,
+            },
+          },
+        },
+        item: {
+          hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
+          visible: {
+            opacity: 1,
+            y: 0,
+            filter: 'blur(0px)',
+            transition: {
+              duration: 1.2,
+              type: 'spring',
+              bounce: 0.3,
+            },
+          },
+        },
+      }}
+    >
+
              
             <div className="flex flex-col items-center my-30 ">
                 <div className="flex flex-col items-center  ">
-                    <h1 className="
-                    text-gray-600 text-7xl md:text-8xl mx-30 font-bold font text-center select-none">
+                    <h1 className=" bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent 
+                       text-7xl md:text-8xl mx-30 font-bold font text-center ">
                         Ashwin Chithravel
                         </h1>
                     <p className="text-3xl md:text-4xl my-10 font-bold select-none">Web Developer</p>
                 </div>
-                <div className="select-none md:px-60 mx-15 md:mx-40 my-20 text-xl text-center">
+                
+                <div className=" select-none md:px-60 mx-15 md:mx-40 my-20 text-xl text-center">
                     Passionate about creating beautiful, functional, and user-friendly websites using modern technologies like React.js, JavaScript, and responsive design.
 
                 </div>
                 <div className="flex flex-col md:flex-row gap-5">
-                    <Link to="/project" className="w-60 h-15 text-xl bg-blue-400 rounded-2xl text-white  my-5 flex justify-center items-center">View My Work
+                    <Link to="/project" className="w-60 h-15 text-xl bg-[linear-gradient(135deg,#3b82f6,#9333ea)]   rounded-2xl  text-white my-5 flex justify-center items-center">View My Work
                         <svg className=" h-6 w-6 my-1 ms-4 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" clipRule="evenodd" d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z" fill="#fff" />
                         </svg>
@@ -67,6 +98,7 @@ export const Home = () => {
                     <Link to="/resume"  className="  w-60 h-15   text-xl  bg-blue-400 rounded-2xl text-white flex justify-center items-center">Download Resume</Link>
                 </div>
             </div>
+            </AnimatedGroup>
         </>
     )
 }

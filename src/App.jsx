@@ -2,14 +2,12 @@ import { BrowserRouter, Route, Routes, } from "react-router"
 import { Home } from "./Component/Home"
 import { Navbar } from "./Component/Navbar"
 import { About } from "./Component/About"
-import "./input.css"
+import "./App.css"
 import { Project } from "./Component/Project"
 import "./index.css"
 import { Contact } from "./Component/Contact"
 import { Skill } from "./Component/Skill"
 import { Resume } from "./Component/Resume"
-// import { Toster } from "./Component/Component/Toster"
-// import { TextEffect } from "../components/motion-primitives/text-effect"
 
 
 
@@ -23,7 +21,7 @@ function App() {
      
       <BrowserRouter>
        <Navbar />
-       {/* <Toster/> */}
+       
         <Routes>
        
           <Route path="/" element={<Home />} />

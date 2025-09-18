@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-router";
+import { AnimatedGroup } from "../../components/motion-primitives/animated-group";
+
+
 
 
 
@@ -47,6 +50,34 @@ export const Contact = (sueccess, failed) => {
 
     return (
         <>
+         <AnimatedGroup
+     
+      variants={{
+        container: {
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.05,
+            },
+          },
+        },
+        item: {
+          hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
+          visible: {
+            opacity: 1,
+            y: 0,
+            filter: 'blur(0px)',
+            transition: {
+              duration: 1.2,
+              type: 'spring',
+              bounce: 0.3,
+            },
+          },
+        },
+      }}
+    >
+
 
             <div className="text-center select-none">
                 <h1 className="text-4xl font-bold mt-20">Get In Touch</h1>
@@ -140,7 +171,7 @@ export const Contact = (sueccess, failed) => {
                 </form>
             </div>
 
-
+            </AnimatedGroup>
         </>
     )
 }

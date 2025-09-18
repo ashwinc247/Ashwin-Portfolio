@@ -6,6 +6,8 @@ import ContactImg from "../assets/Contact.png"
 import ProjectImg from "../assets/Project.png"
 import SkillImg from "../assets/Skill.png"
 import ResumeImg from "../assets/Resume.png"
+import { AnimatedGroup } from "../../components/motion-primitives/animated-group"
+
 
 export const Project = () => {
 
@@ -28,7 +30,36 @@ export const Project = () => {
 
 
     return (
+         
         <>
+
+        <AnimatedGroup
+      
+      variants={{
+        container: {
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.05,
+            },
+          },
+        },
+        item: {
+          hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
+          visible: {
+            opacity: 1,
+            y: 0,
+            filter: 'blur(0px)',
+            transition: {
+              duration: 1.5,
+              type: 'spring',
+              bounce: 0.3,
+            },
+          },
+        },
+      }}
+    >
             <div className="flex  flex-col text-center">
                 <h1 className="text-4xl font-bold mt-20">
                     My Project
@@ -87,6 +118,7 @@ export const Project = () => {
                     </div>
                 </div>
             </div>
+            </AnimatedGroup>
         </>
     )
 }
