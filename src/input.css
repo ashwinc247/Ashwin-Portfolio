@@ -12,19 +12,16 @@
     
     
 }
-body{
-    background-color: var(--gradient-primary);
-}
-:root{
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 70%), hsl(270 100% 75%))
-}
+
+
+
 
 @theme{
     
     --color-primaryblue:rgb(79, 195, 247);
     --color-AccentPurple:#B085F5;
     --color-DarkBackground:#1A1B23;
-    --color-GlassSurface:#2A2D3A;
+    --color-GlassSurface:rgb(42, 45, 58);
     --color-PureWhite:#FAFBFC;
     --color-MutedGray:#64748B;
     --background-gradienttext: linear-gradient(to right, #9333ea, #ec4899, #f59e0b);

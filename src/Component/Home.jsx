@@ -40,7 +40,7 @@ export const Home = () => {
             <div className="flex flex-col items-center my-30 ">
                 <div className="flex flex-col items-center  ">
                     <h1 className=" bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent 
-                       text-7xl md:text-8xl mx-30 font-bold font text-center ">
+                       text-7xl md:text-8xl mx-30 font-bold font text-center select-none">
                         Ashwin Chithravel
                         </h1>
                     <p className="text-3xl md:text-4xl my-10 font-bold select-none">Web Developer</p>
