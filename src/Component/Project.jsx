@@ -61,7 +61,7 @@ export const Project = () => {
       }}
     >
             <div className="flex  flex-col text-center">
-                <h1 className="text-4xl font-bold mt-20">
+                <h1 className="text-4xl font-bold mt-20  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent">
                     My Project
                 </h1>
                 <p className="text-2xl mt-10 md:mx-0 mx-10 text-center">
@@ -69,7 +69,7 @@ export const Project = () => {
                 </p>
             </div>
             <div className="flex flex-col md:flex-row px-8 md:px-60 mt-20  mx-auto mb-30">
-                <div className=" bg-gray-300 p-5 md:p-15 rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl flex-1 shadow-lg">
+                <div className="  bg-PureWhite shadow-xl p-5 md:p-15 rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl flex-1 shadow-lg">
                     <div className="flex justify-between items-center">
                         <h1 className="text-xl md:text-2xl font-bold mt-5">
                             Portfolio Website

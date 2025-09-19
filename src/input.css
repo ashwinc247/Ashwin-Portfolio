@@ -1,4 +1,3 @@
-
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
@@ -7,22 +6,31 @@
 
 
 
-*{
+* {
     transition: .3s;
-    
-    
+
+
 }
 
 
+@theme {
+
+    --color-russian: #10002bff;
+    --color-russian-violet-2: #240046ff;
+    --color-persian-indigo: #3c096cff;
+    --color-tekhelet: #5a189aff;
+    --color-french-violet: #7b2cbfff;
+    --color-amethyst: #9d4eddff;
+    --color-heliotrope: #c77dffff;
+    --color-mauve: #e0aaffff;
 
 
-@theme{
+
+    --color-primaryblue: rgb(79, 195, 247);
+    --color-AccentPurple: #B085F5;
+    --color-DarkBackground: rgb(26, 27, 35);
+    --color-GlassSurface: rgb(42, 45, 58);
+    --color-PureWhite: #FAFBFC;
+    --color-MutedGray: #64748B;
     
-    --color-primaryblue:rgb(79, 195, 247);
-    --color-AccentPurple:#B085F5;
-    --color-DarkBackground:rgb(26, 27, 35);
-    --color-GlassSurface:rgb(42, 45, 58);
-    --color-PureWhite:#FAFBFC;
-    --color-MutedGray:#64748B;
-    --background-gradienttext: linear-gradient(to right, #9333ea, #ec4899, #f59e0b);
 }

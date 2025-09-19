@@ -1,0 +1,26 @@
+
+@import "tailwindcss";
+
+ /*dark bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] */
+
+@theme {
+
+    --color-russian: rgb(79, 195, 247);
+    --color-russian-violet-2: #240046ff;
+    --color-persian-indigo: #3c096cff;
+    --color-tekhelet: #5a189aff;
+    --color-french-violet: #7b2cbfff;
+    --color-amethyst: #9d4eddff;
+    --color-heliotrope: #c77dffff;
+    --color-mauve: #e0aaffff;
+
+  
+
+    --color-primaryblue: rgb(79, 195, 247);
+    --color-AccentPurple: rgb(176, 133, 245);
+    --color-DarkBackground: rgb(26, 27, 35);
+    --color-GlassSurface: rgb(42, 45, 58);
+    --color-PureWhite: rgb(255, 255, 255);
+    --color-MutedGray: rgb(100, 116, 139);
+    
+}

@@ -65,8 +65,8 @@ export const Navbar = () => {
 
 
         <>
-            <div className="navbar dark:bg-[rgb(26, 27, 35)] bg-[#ffffffc5] w-3/4 md:w-2/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex justify-between p-5 items-center  top-0  shadow-xl z-50">
-                <div className="text-4xl text-blue-500 font-bold select-none">
+            <div className="navbar dark:bg-[rgb(26, 27, 35)] bg-[#ffffff9d] w-3/4 md:w-2/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex justify-between p-5 items-center  top-0  shadow-xl z-50">
+                <div className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent font-bold select-none">
                     As.
                 </div>
 
@@ -80,7 +80,7 @@ export const Navbar = () => {
                     <Link to="/contact" className="mx-5 text-md ">Contact</Link>
                 </div>
                 <div onClick={toggle}
-                    className=" border-2 p-1 hidden md:block rounded-xl cursor-pointer">
+                    className="   hidden md:block rounded-xl cursor-pointer ">
                     {theme == "dark" ?
                         <svg
 
@@ -99,7 +99,7 @@ export const Navbar = () => {
                 </div>
 
                 {active == "" ?
-                    <p onClick={() => { setActive(active == "" ? "hidden " : "") }} className="text-xl  h-6 w-6 absolute right-2 top-auto md:hidden select-none">X</p>
+                    <p onClick={() => { setActive(active == "" ? "hidden " : "") }} className="text-xl  h-6 w-6 absolute right-2 top-auto md:hidden select-none ">X</p>
 
                     :
                     <svg onClick={() => { setActive(active == "" ? "hidden " : "") }} className="  h-6 w-6 absolute right-2 top-auto md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
