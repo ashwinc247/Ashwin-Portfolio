@@ -69,7 +69,7 @@ export const Project = () => {
                 </p>
             </div>
             <div className="flex flex-col md:flex-row px-8 md:px-60 mt-20  mx-auto mb-30">
-                <div className="  bg-PureWhite shadow-xl p-5 md:p-15 rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl flex-1 shadow-lg">
+                <div className="  bg-PureWhite dark:bg-[#41455adc] p-5 md:p-15 rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl flex-1 shadow-lg">
                     <div className="flex justify-between items-center">
                         <h1 className="text-xl md:text-2xl font-bold mt-5">
                             Portfolio Website
@@ -83,14 +83,14 @@ export const Project = () => {
                         features smooth animations, modern design, and optimized performance
                     </p>
                     <div className="flex mt-10 flex-wrap gap-2">
-                        <ul className="text-xs bg-gray-200 px-4 py-2 rounded-4xl outline me-3 outline-blue-50">React.js</ul>
-                        <ul className="text-xs bg-gray-200 px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Tailwind CSS</ul>
-                        <ul className="text-xs bg-gray-200 px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Javascript</ul>
-                        <ul className="text-xs bg-gray-200 px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Responsive Design</ul>
+                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">React.js</ul>
+                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Tailwind CSS</ul>
+                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Javascript</ul>
+                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Responsive Design</ul>
 
                     </div>
                     <div className="mt-10 me-4 ">
-                        <button className="flex gap-2 text-white bg-gray-400 py-3 px-7 rounded-xl outline outline-gray-100">
+                        <button className="flex gap-2 text-white bg-gray-400 dark:bg-[#57545e] py-3 px-7 rounded-xl outline outline-gray-100">
                             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -104,7 +104,7 @@ export const Project = () => {
                         </button>
                     </div>
                 </div>
-                <div className="  md:overflow-hidden md:rounded-e-3xl md:rounded-bl-none rounded-tr-none  rounded-b-3xl shadow-lg flex-1  min-h-64 md:h-auto ">
+                <div className=" dark:bg-[#41455adc]  md:overflow-hidden md:rounded-e-3xl md:rounded-bl-none rounded-tr-none  rounded-b-3xl shadow-lg flex-1  min-h-64 md:h-auto ">
                     <div className="relative min-h-64 md:w-3/4 md:h-full mx-auto ">
                         {images.map((img, i) => (
                             <img

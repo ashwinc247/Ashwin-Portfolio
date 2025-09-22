@@ -83,10 +83,10 @@ export const Contact = (sueccess, failed) => {
                 <h1 className="text-4xl font-bold mt-20  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent">Get In Touch</h1>
                 <p className="text-xl my-[5vh]">Have a Project in mind or want to collaborate? i'd love to hear from you!</p>
             </div>
-            <div className=" grid grid-cols-1 md:grid-cols-3   sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 m-5">
+            <div className=" grid grid-cols-1 md:grid-cols-3 mb-20  sm:mx-10 md:mx-20 lg:mx-40 xl:mx-50 my-5 mx-5">
                 <div className="flex flex-col md:col-span-1">
-                    <div className="p-10 bg-PureWhite shadow-xl rounded-2xl mb-5">
-                        <h1 className="text-2xl font-bold">Contact Information</h1>
+                    <div className="p-7 bg-PureWhite dark:bg-[#41455adc]  shadow-xl rounded-2xl mb-5">
+                        <h1 className="text-2xl font-bold mt-3">Contact Information</h1>
                         <div className="mt-5">
                             <div className="m-2 flex">
                                 <svg className="h-12 w-12 m-2 p-3 bg-[linear-gradient(135deg,#3b82f6,#9333ea)] rounded-xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" /></svg>
@@ -111,7 +111,7 @@ export const Contact = (sueccess, failed) => {
                             </div>
                         </div>
                     </div>
-                    <div className="p-10 bg-PureWhite shadow-xl rounded-2xl">
+                    <div className="p-10 bg-PureWhite dark:bg-[#41455adc]  shadow-xl rounded-2xl">
                         <h1 className="text-2xl font-bold">Follow Me</h1>
                         <div className="flex mt-5 flex-wrap ">
                             <a href="https://github.com/ashwinc247/chitravel-codes-portfolio" target="blank" rel="noopener noreferrer"><svg className="h-12 w-12 m-2 p-3 bg-[linear-gradient(135deg,#3b82f6,#9333ea)] rounded-xl" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -145,7 +145,7 @@ export const Contact = (sueccess, failed) => {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} className="p-10 bg-PureWhite shadow-xl rounded-2xl md:col-span-2 mt-20 md:mt-0 ms-0 md:ms-5">
+                <form ref={form} onSubmit={sendEmail} className="p-10 bg-PureWhite dark:bg-[#41455adc]  shadow-xl rounded-2xl md:col-span-2 mt-20 md:mt-0 ms-0 md:ms-5">
                     <h1 className="text-2xl font-bold mb-10">Send Me a Message</h1>
                     <div className="flex gap-2">
                         <div className="flex-1">

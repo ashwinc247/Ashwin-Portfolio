@@ -48,9 +48,9 @@ export const Resume = () => {
                         Download Resume PDF
                     </a>
                 </div>
-                <div className="text-center bg-PureWhite shadow-xl mx-8 md:mx-[20%] rounded-2xl mt-20 p-10 md:py-10">
+                <div className="text-center bg-PureWhite dark:bg-[#41455adc] shadow-xl mx-8 md:mx-[20%] rounded-2xl mt-20 p-10 md:py-10">
                     <h1 className="pt-2 text-3xl font-bold"> Ashwin Chithravel</h1>
-                    <p className="text-xl text-gray-600 mt-2">Web Developer</p>
+                    <p className="text-xl text-gray-600 mt-2 dark:text-gray-400">Web Developer</p>
                     <div className="text-ms flex flex-col md:flex-row gap-3  md:justify-start items-start mt-5">
                         <p className="flex gap-3 justify-center items-center flex-1">
                             <svg className="h-5 w-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#3b82f6"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" /></svg>
@@ -67,50 +67,50 @@ export const Resume = () => {
                             India</p>
                     </div>
                 </div>
-                <div className=" bg-PureWhite shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
+                <div className=" bg-PureWhite dark:bg-[#41455adc] shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
                     <h1 className="text-3xl font-bold">
                         Experience
                     </h1>
                     <div className="mt-4 border-s-4 border-[#3b82f6] ps-3 rounded">
-                        <p className="text-xl text-gray-700">Web Developer</p>
+                        <p className="text-xl text-gray-700 dark:text-gray-200">Web Developer</p>
                         <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent ">Self-Employed</p>
-                        <p className="text-[.8rem] text-gray-500">2020-Present</p>
-                        <p className="mt-3 text-ms text-gray-500">
+                        <p className="text-[.8rem] text-gray-500 dark:text-gray-400">2020-Present</p>
+                        <p className="mt-3 text-ms text-gray-500 dark:text-gray-400">
                             developing modern web application using React.js,creating responsive designs , and implementing BrowserRouter
                             practices for performance optimization
                         </p>
                     </div>
                 </div>
-                <div className=" bg-PureWhite shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
-                    <h1 className="text-3xl font-bold">
+                <div className=" bg-PureWhite dark:bg-[#41455adc] shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
+                    <h1 className="text-3xl font-bold ">
                         Education
                     </h1>
-                    <div className="mt-4 border-s-4 border-[#3b82f6]  ps-3 rounded">
-                        <p className="text-xl text-gray-700">Bachelor's Degree in Computer Science</p>
+                    <div className="mt-4 border-s-4 border-[#3b82f6]   ps-3 rounded">
+                        <p className="text-xl text-gray-700 dark:text-gray-200">Bachelor's Degree in Computer Science</p>
                         <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent ">Bharathidhasan University</p>
-                        <p className="text-[.8rem] text-gray-500">2020-2024</p>
-                        <p className="mt-3 text-ms text-gray-500">
+                        <p className="text-[.8rem] text-gray-500 dark:text-gray-400">2020-2024</p>
+                        <p className="mt-3 text-ms text-gray-500 dark:text-gray-400">
                             Relevant coursework in web development, software engineering and computer programming
                         </p>
                     </div>
 
                 </div>
-                <div className=" bg-PureWhite shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
+                <div className=" bg-PureWhite dark:bg-[#41455adc] shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10">
                     <h1 className="text-3xl font-bold">
                         Education
                     </h1>
                     <div className="mt-4 border-s-4 border-blue-500 ps-3 rounded">
-                        <p className="text-xl text-gray-700">Master's Degree in Computer Application</p>
+                        <p className="text-xl text-gray-700 dark:text-gray-200">Master's Degree in Computer Application</p>
                         <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent ">Anna University</p>
-                        <p className="text-[.8rem] text-gray-500">2024-2026</p>
-                        <p className="mt-3 text-ms text-gray-500">
+                        <p className="text-[.8rem] text-gray-500 dark:text-gray-400">2024-2026</p>
+                        <p className="mt-3 text-ms text-gray-500 dark:text-gray-400">
                             Relevant coursework in web development, software engineering and computer programming
                         </p>
                     </div>
 
 
                 </div>
-                <div className=" bg-PureWhite shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10 mb-[10vh]">
+                <div className=" bg-PureWhite dark:bg-[#41455adc] shadow-xl mx-8 md:mx-[20%] rounded-2xl p-10 mt-10 mb-[10vh]">
                     <h1 className="text-3xl font-bold">
                         Technical Skills
                     </h1>
@@ -118,36 +118,36 @@ export const Resume = () => {
                         <div className="mt-5 md:w-[40%] ">
                             <p className="text-2xl font-medium mb-5">Frontend</p>
                             <div className="flex  flex-wrap ">
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 inline-flex me-2 mt-2 rounded outline outline-blue-50 ">HTML</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">CSS</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">Javascript</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">React.js</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Next.js</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">Responsive Design</p>
+                                <p className="bg-blue-100  dark:bg-[#41455adc]  text-xs px-4 text-blue-500  py-1 inline-flex me-2 mt-2 rounded outline outline-blue-50  ">HTML</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">CSS</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">Javascript</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">React.js</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Next.js</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">Responsive Design</p>
 
                             </div>
                         </div>
                         <div className="mt-5 md:w-[40%]">
                             <p className="text-2xl font-medium mb-5">Backend</p>
                             <div className="flex  flex-wrap ">
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50 ">MangoDB</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50 ">MangoDB</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc] text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
 
                             </div>
                         </div>
                         <div className="mt-5 md:w-[40%]">
                             <p className="text-2xl font-medium mb-5">Tools & Others</p>
                             <div className="flex  flex-wrap ">
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50 ">Git & Github</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Node.js</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Basic Photoshop</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Video Editing</p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
+                                <p className="bg-blue-100  dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50 ">Git & Github</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Node.js</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Basic Photoshop</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Video Editing</p>
+                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
+                                <p className="bg-blue-100  dark:bg-[#41455adc] text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
 
                             </div>
                         </div>

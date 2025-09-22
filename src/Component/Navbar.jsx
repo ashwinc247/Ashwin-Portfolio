@@ -65,7 +65,7 @@ export const Navbar = () => {
 
 
         <>
-            <div className="navbar dark:bg-[rgb(26, 27, 35)] bg-[#ffffff9d] w-3/4 md:w-2/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex justify-between p-5 items-center  top-0  shadow-xl z-50">
+            <div className="navbar dark:bg-[rgb(26, 27, 35)] bg-[#ffffff9d] dark:bg-[#41455adc] w-3/4 md:w-3/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex justify-between p-5 items-center  top-0  shadow-xl z-50">
                 <div className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent font-bold select-none">
                     As.
                 </div>
@@ -85,7 +85,7 @@ export const Navbar = () => {
                         <svg
 
                             className="h-7 w-7 hidden md:block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         :
                         <svg className="h-7 w-7 p-1 hidden md:block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,10 +99,10 @@ export const Navbar = () => {
                 </div>
 
                 {active == "" ?
-                    <p onClick={() => { setActive(active == "" ? "hidden " : "") }} className="text-xl  h-6 w-6 absolute right-2 top-auto md:hidden select-none ">X</p>
+                    <p onClick={() => { setActive(active == "" ? "hidden " : "") }} className="text-xl mr-4 h-6 w-6 absolute right-2 top-auto md:hidden select-none ">X</p>
 
                     :
-                    <svg onClick={() => { setActive(active == "" ? "hidden " : "") }} className="  h-6 w-6 absolute right-2 top-auto md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+                    <svg onClick={() => { setActive(active == "" ? "hidden " : "") }} className=" mr-4 h-6 w-6 absolute right-2 top-auto md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill={theme=="dark"?"#fff":"#000"}><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
 
                 }
 
@@ -110,7 +110,7 @@ export const Navbar = () => {
             </div>
             <div className={active} >
 
-                <div onClick={() => { setActive("hidden") }} className="m-auto mt-5  top-10 rounded-3xl backdrop-blur-[10px] bg-[#ffffffc5] w-3/4  md:hidden z-20 font-medium  px-20 py-10  shadow-2xl flex flex-col justify-center items-center  ">
+                <div onClick={() => { setActive("hidden") }} className="m-auto mt-5 dark:bg-[#41455adc] top-10 rounded-3xl backdrop-blur-[10px] bg-[#ffffffc5] w-3/4  md:hidden z-20 font-medium  px-20 py-10  shadow-2xl flex flex-col justify-center items-center  ">
 
                     <Link to="/" className="my-5 text-xl ">Home</Link>
                     <Link to="/about" className="my-5 text-xl">About</Link>
@@ -124,7 +124,7 @@ export const Navbar = () => {
                             <div className="flex items-center gap-1"><svg
 
                                 className="h-7 w-7 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                                 <p className="text-ms font-normal">Light Mode</p>
 
