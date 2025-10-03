@@ -1,5 +1,5 @@
 
-import { p } from "motion/react-client"
+// import { p } from "motion/react-client"
 import { useState, useEffect } from "react"
 import { Link } from "react-router"
 
@@ -65,13 +65,13 @@ export const Navbar = () => {
 
 
         <>
-            <div className="navbar dark:bg-[rgb(26, 27, 35)] bg-[#ffffff9d] dark:bg-[#41455adc] w-3/4 md:w-3/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex justify-between p-5 items-center  top-0  shadow-xl z-50">
-                <div className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent font-bold select-none">
+            <div className="navbar dark:bg-[rgb(26, 27, 35)] bg-[#ffffff9d] dark:bg-[#41455adc] w-3/4 md:w-2/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex  justify-between p-5 items-center  top-0  shadow-xl z-50">
+                <div className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text  text-transparent font-bold select-none">
                     As.
                 </div>
 
 
-                <div className="hidden md:block font-medium">
+                <div className="hidden md:block font-medium text-wrap">
                     <Link to="/" className="mx-10  text-md">Home</Link>
                     <Link to="/about" className="mx-5 text-md">About</Link>
                     <Link to="/skill" className="mx-5 text-md">Skill</Link>
@@ -85,7 +85,7 @@ export const Navbar = () => {
                         <svg
 
                             className="h-7 w-7 hidden md:block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         :
                         <svg className="h-7 w-7 p-1 hidden md:block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,23 +108,23 @@ export const Navbar = () => {
 
 
             </div>
-            <div className={active} >
+           
 
-                <div onClick={() => { setActive("hidden") }} className="m-auto mt-5 dark:bg-[#41455adc] top-10 rounded-3xl backdrop-blur-[10px] bg-[#ffffffc5] w-3/4  md:hidden z-20 font-medium  px-20 py-10  shadow-2xl flex flex-col justify-center items-center  ">
+                <div  className={active +' m-auto sticky  top-25   backdrop-blur-[10px] z-20   mt-5 dark:bg-[#41455adc]  rounded-3xl  bg-[#ffffffc5] w-3/4  md:hidden  font-medium  px-20 py-10  shadow-2xl flex flex-col justify-center items-center'}>
 
-                    <Link to="/" className="my-5 text-xl ">Home</Link>
-                    <Link to="/about" className="my-5 text-xl">About</Link>
-                    <Link to="/skill" className="my-5 text-xl">Skill</Link>
-                    <Link to="/project" className="my-5 text-xl">Project</Link>
-                    <Link to="/resume" className="my-5 text-xl" >Resume</Link>
-                    <Link to="/contact" className="my-5 text-xl ">Contact</Link>
+                    <Link to="/" className="my-5 text-xl " onClick={() => { setActive("hidden") }}>Home</Link>
+                    <Link to="/about" className="my-5 text-xl" onClick={() => { setActive("hidden") }}>About</Link>
+                    <Link to="/skill" className="my-5 text-xl" onClick={() => { setActive("hidden") }}>Skill</Link>
+                    <Link to="/project" className="my-5 text-xl" onClick={() => { setActive("hidden") }}>Project</Link>
+                    <Link to="/resume" className="my-5 text-xl" onClick={() => { setActive("hidden") }}>Resume</Link>
+                    <Link to="/contact" className="my-5 text-xl " onClick={() => { setActive("hidden") }}>Contact</Link>
                     <div onClick={toggle}
-                        className=" border-2 p-3  rounded-xl  mt-3 cursor-pointer">
+                        className=" border-1 p-2  rounded-4xl  mt-3 cursor-pointer">
                         {theme == "dark" ?
                             <div className="flex items-center gap-1"><svg
 
                                 className="h-7 w-7 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                                 <p className="text-ms font-normal">Light Mode</p>
 
@@ -145,7 +145,7 @@ export const Navbar = () => {
                 </div>
 
 
-            </div>
+            
         </>
     )
 }

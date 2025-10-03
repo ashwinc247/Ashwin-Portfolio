@@ -71,17 +71,17 @@ export const Home = () => {
                     <div className="h-80 w-80 bg-PureWhite dark:bg-[#41455adc] shadow-xl rounded-2xl flex flex-col justify-center mx-5 ">
                         <svg className="h-20 w-20 mx-auto mb-7 p-5  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] rounded-xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" /></svg>
                         <h1 className="text-2xl font-bold mb-10">About</h1>
-                        <p className="text-xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, qui!</p>
+                        <p className="text-xl mb-5">Learn about my journey as a web developer and my passion for creating digital experiences</p>
                     </div>
                     <div className="h-80 w-80 bg-PureWhite dark:bg-[#41455adc] shadow-xl rounded-2xl flex flex-col justify-center mx-5">
                         <svg className="h-20 w-20 mx-auto mb-7 p-5   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] rounded-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" /></svg>
                         <h1 className="text-2xl font-bold mb-10">Skill</h1>
-                        <p className="text-xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, qui!</p>
+                        <p className="text-xl mb-5 mx-2">Discover the technologiesand tools i use to bring ideas to life</p>
                     </div>
                     <div className="h-80 w-80 bg-PureWhite dark:bg-[#41455adc] shadow-xl rounded-2xl flex flex-col justify-center mx-5">
                         <svg className="h-20 w-20 mx-auto mb-7 p-5  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] rounded-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z" /></svg>
                         <h1 className="text-2xl font-bold mb-10">Project</h1>
-                        <p className="text-xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, qui!</p>
+                        <p className="text-xl mb-5">Explore my protfolio of web application and development projects</p>
                     </div>
                 </div>
             </div>
