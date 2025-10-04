@@ -5,6 +5,10 @@ import { AnimatedGroup } from "../../components/motion-primitives/animated-group
 
 export const Resume = () => {
 
+    const frontend=["HTML","CSS","Javascript","React.js","Next.js","Responsive Design"]
+    const backend=["Node.js","Express","Mango DB"]
+    const toolsAndOthers=["Git & Github","PhotoShop","Capcut"]
+    
     return (
         <>
             <AnimatedGroup
@@ -118,37 +122,40 @@ export const Resume = () => {
                         <div className="mt-5 md:w-[40%] ">
                             <p className="text-2xl font-medium mb-5">Frontend</p>
                             <div className="flex  flex-wrap ">
-                                <p className="bg-blue-100  dark:bg-[#41455adc]  text-xs px-4 text-blue-500  py-1 inline-flex me-2 mt-2 rounded outline outline-blue-50  ">HTML</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">CSS</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">Javascript</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">React.js</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Next.js</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block  me-2 mt-2 rounded outline outline-blue-50">Responsive Design</p>
-
+                                {
+                                    frontend.map((i,index)=>(
+                                        <p key={index} className="bg-blue-100  dark:bg-[#41455adc]  text-xs px-4 text-[#b8e3ff]  py-1 inline-flex me-2 mt-2 rounded-2xl outline outline-[#ffffff2a]  ">
+                                            {i}
+                                        </p>
+                                    ))
+                                }
+                               
                             </div>
                         </div>
                         <div className="mt-5 md:w-[40%]">
                             <p className="text-2xl font-medium mb-5">Backend</p>
                             <div className="flex  flex-wrap ">
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50 ">MangoDB</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc] text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-
+                                {
+                                    backend.map((i,index)=>(
+                                        <p key={index} className="bg-blue-100  dark:bg-[#41455adc]  text-xs px-4 text-[#b8e3ff]  py-1 inline-flex me-2 mt-2 rounded-2xl outline outline-[#ffffff2a]  ">
+                                            {i}
+                                        </p>
+                                    ))
+                                }
+                              
                             </div>
                         </div>
                         <div className="mt-5 md:w-[40%]">
                             <p className="text-2xl font-medium mb-5">Tools & Others</p>
                             <div className="flex  flex-wrap ">
-                                <p className="bg-blue-100  dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50 ">Git & Github</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Node.js</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Basic Photoshop</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50">Video Editing</p>
-                                <p className="bg-blue-100 dark:bg-[#41455adc]  text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-                                <p className="bg-blue-100  dark:bg-[#41455adc] text-xs px-4 text-blue-500 py-1 block me-2 mt-2 rounded outline outline-blue-50"></p>
-
+                                {
+                                    toolsAndOthers.map((i,index)=>(
+                                        <p key={index} className="bg-blue-100  dark:bg-[#41455adc]  text-xs px-4 text-[#b8e3ff]  py-1 inline-flex me-2 mt-2 rounded-2xl outline outline-[#ffffff2a]   ">
+                                            {i}
+                                        </p>
+                                    ))
+                                }
+                                
                             </div>
                         </div>
                     </div>

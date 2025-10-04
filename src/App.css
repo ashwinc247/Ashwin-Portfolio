@@ -1,13 +1,14 @@
 
 @import "tailwindcss";
 
+
 @custom-variant dark (&:where(.dark, .dark *));
 /* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
  /*dark bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] */
 
 @theme {
 
-   
+   --font-code :"Press Start 2P", system-ui;
 
   
 
@@ -22,4 +23,5 @@
 html,div,ul,p,h1,form,svg{
   transition: background-color .5s ease, color .5s ease;
 }
+
 @custom-variant dark (&:where(.dark, .dark *));

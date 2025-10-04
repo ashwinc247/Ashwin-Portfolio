@@ -6,9 +6,15 @@ import { AnimatedGroup } from "../../components/motion-primitives/animated-group
 
 
 
+
 export const Home = () => {
     return (
         <>
+        
+
+
+
+
          <AnimatedGroup
       variants={{
         container: {
@@ -43,7 +49,7 @@ export const Home = () => {
                        text-7xl drop-shadow-2xl md:text-8xl mx-30 font-bold font text-center select-none">
                         Ashwin Chithravel
                         </h1>
-                    <p className=" text-3xl md:text-4xl my-10 font-bold select-none text-black dark:text-white">Web Developer</p>
+                    <p className=" text-3xl md:text-4xl my-10 font-bold select-none text-black dark:text-white font-code "><code className="tracking-[.3rem] md:tracking-[.5rem]">Web Developer</code></p>
                 </div>
                 
                 <div className=" select-none md:px-60 mx-15 md:mx-40 my-20 text-xl   text-center">

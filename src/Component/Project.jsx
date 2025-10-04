@@ -1,4 +1,4 @@
-
+import React from "react";
 import  { useState, useEffect } from "react";
 import HomeImg from "../assets/Home.png"
 import AboutImg from "../assets/About.png"
@@ -9,8 +9,10 @@ import ResumeImg from "../assets/Resume.png"
 import { AnimatedGroup } from "../../components/motion-primitives/animated-group"
 
 
+
 export const Project = () => {
 
+    const projectTools = ["React.js","Tailwind CSS","Javascript","Responsive Design"]
 
     const images = [ HomeImg,AboutImg,ContactImg,ProjectImg,SkillImg,ResumeImg ];
 
@@ -24,8 +26,14 @@ export const Project = () => {
     }, [images.length]);
 
 
-
-
+const handleDownload = () => {
+    const a = document.createElement("a");
+    a.href = ""; // public folder path
+    a.download = "Code.zip"; // user கிட்ட download ஆகும் பெயர்
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
 
 
 
@@ -83,14 +91,15 @@ export const Project = () => {
                         features smooth animations, modern design, and optimized performance
                     </p>
                     <div className="flex mt-10 flex-wrap gap-2">
-                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">React.js</ul>
-                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Tailwind CSS</ul>
-                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Javascript</ul>
-                        <ul className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">Responsive Design</ul>
-
+                        {
+                            projectTools.map((i,index)=>(
+                                <ul key={index} className="text-xs bg-gray-200 dark:bg-[#41455adc] px-4 py-2 rounded-4xl outline me-3 outline-blue-50">{i}</ul>
+                            ))
+                        }
+                        
                     </div>
-                    <div className="mt-10 me-4 ">
-                        <button className="flex gap-2 text-white bg-gray-400 dark:bg-[#57545e] py-3 px-7 rounded-xl outline outline-gray-100">
+                    <div onClick={handleDownload} className="mt-10 me-4 " >
+                        <button className="flex gap-2 text-white bg-gray-400 dark:bg-[#57545e] py-2 px-5 rounded-xl outline outline-gray-100">
                             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
