@@ -152,20 +152,20 @@ export const Contact = (sueccess, failed) => {
                     <div className="flex gap-2">
                         <div className="flex-1">
                             <p className="text-xs mb-2">Name *</p>
-                            <input name="user_name" required className=" border-2 w-full rounded-full border-gray-300 mb-10 p-2" type="text" />
+                            <input name="user_name" required className=" border-2 w-full rounded-2xl border-gray-300 mb-10 p-2" type="text" />
 
                         </div>
                         <div className="flex-1">
                             <p className="text-xs mb-2">Email *</p>
-                            <input name="user_email" required className="border-2 w-full rounded-full border-gray-300 mb-10 p-2 " type="text" />
+                            <input name="user_email" required className="border-2 w-full rounded-2xl border-gray-300 mb-10 p-2 " type="text" />
 
                         </div>
 
                     </div>
                     <p className="text-xs mb-2">Subject</p>
-                    <input name="subject" required className="border-2  w-full rounded-full border-gray-300 mb-10 p-2" type="text" />
+                    <input name="subject" required className="border-2  w-full rounded-2xl border-gray-300 mb-10 p-2" type="text" />
                     <p className="text-xs mb-2">Message</p>
-                    <textarea name="message" required className="border-2 w-full rounded-full border-gray-300 mb-10 p-2"></textarea>
+                    <textarea name="message" required className="border-2 w-full rounded-2xl border-gray-300 mb-10 p-2"></textarea>
                     
                     <button type="submit" className="bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] w-[50%] text-center p-3 rounded-2xl text-white block  mx-auto ">Send Message</button>
 
