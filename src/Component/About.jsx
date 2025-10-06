@@ -35,7 +35,7 @@ export const About = () => {
       }}
     >
         <div className="container  flex flex-col items-center mx-auto">
-                <h1 className="abt-txt text-4xl font-bold mt-20  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent">About Me</h1>
+                <h1 className="abt-txt text-4xl font-bold mt-20  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text text-transparent">About Me</h1>
                 <div className="text-xl py-10 text-center">Get to know more about my journey as a web developer</div>
             </div>
 
@@ -50,7 +50,7 @@ export const About = () => {
                         When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with fellow developers in the community.
                     </p>
                 </div>
-                <div className="md:ms-20 bg-[linear-gradient(135deg,#3b82f6,#9333ea)]  rounded-2xl p-5 text-white h-auto  my-5">
+                <div className="md:ms-20 bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)]  rounded-2xl p-5 text-white h-auto  my-5">
                     <h1 className="text-2xl font-medium">
                        My Approach 
                     </h1>
@@ -58,7 +58,7 @@ export const About = () => {
                         I focus on creating responsive, accessible, and performance-optimized web applications that provide exceptional user experiences across all devices.
                     </p>
                 </div>
-                <div className="md:ms-20 bg-[linear-gradient(135deg,#3b82f6,#9333ea)] rounded-2xl p-5 text-white h-auto  my-5">
+                <div className="md:ms-20 bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] rounded-2xl p-5 text-white h-auto  my-5">
                     <h1 className="text-2xl font-medium ">
                         Always Learning
                     </h1>

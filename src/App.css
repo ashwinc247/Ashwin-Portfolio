@@ -24,4 +24,3 @@ html,div,ul,p,h1,form,svg{
   transition: background-color .5s ease, color .5s ease;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));

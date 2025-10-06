@@ -40,13 +40,13 @@ export const Resume = () => {
 
 
                 <div className="text-center">
-                    <h1 className="mt-20 text-4xl font-bold  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent">
+                    <h1 className="mt-20 text-4xl font-bold  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text text-transparent">
                         Resume
                     </h1>
                     <p className="text-xl mt-10 md:mx-0 mx-10 text-center">
                         Download my complete resume or view highlights below
                     </p>
-                    <a href={DownloadImg} download={DownloadImg} target="black" className=" bg-[linear-gradient(135deg,#3b82f6,#9333ea)] py-3 px-10 inline-flex justify-center items-center gap-3 text-xl  rounded-2xl text-white mx-auto my-5   ">
+                    <a href={DownloadImg} download={DownloadImg} target="black" className=" bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] py-3 px-10 inline-flex justify-center items-center gap-3 text-xl  rounded-2xl text-white mx-auto my-5   ">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" /></svg>
 
                         Download Resume PDF
@@ -77,7 +77,7 @@ export const Resume = () => {
                     </h1>
                     <div className="mt-4 border-s-4 border-[#3b82f6] ps-3 rounded">
                         <p className="text-xl text-gray-700 dark:text-gray-200">Web Developer</p>
-                        <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent ">Self-Employed</p>
+                        <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text text-transparent ">Self-Employed</p>
                         <p className="text-[.8rem] text-gray-500 dark:text-gray-400">2020-Present</p>
                         <p className="mt-3 text-ms text-gray-500 dark:text-gray-400">
                             developing modern web application using React.js,creating responsive designs , and implementing BrowserRouter
@@ -91,7 +91,7 @@ export const Resume = () => {
                     </h1>
                     <div className="mt-4 border-s-4 border-[#3b82f6]   ps-3 rounded">
                         <p className="text-xl text-gray-700 dark:text-gray-200">Bachelor's Degree in Computer Science</p>
-                        <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent ">Bharathidhasan University</p>
+                        <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text text-transparent ">Bharathidhasan University</p>
                         <p className="text-[.8rem] text-gray-500 dark:text-gray-400">2020-2024</p>
                         <p className="mt-3 text-ms text-gray-500 dark:text-gray-400">
                             Relevant coursework in web development, software engineering and computer programming
@@ -105,7 +105,7 @@ export const Resume = () => {
                     </h1>
                     <div className="mt-4 border-s-4 border-blue-500 ps-3 rounded">
                         <p className="text-xl text-gray-700 dark:text-gray-200">Master's Degree in Computer Application</p>
-                        <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent ">Anna University</p>
+                        <p className="text-[1rem] bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text text-transparent ">Anna University</p>
                         <p className="text-[.8rem] text-gray-500 dark:text-gray-400">2024-2026</p>
                         <p className="mt-3 text-ms text-gray-500 dark:text-gray-400">
                             Relevant coursework in web development, software engineering and computer programming

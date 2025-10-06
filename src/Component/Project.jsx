@@ -69,7 +69,7 @@ const handleDownload = () => {
       }}
     >
             <div className="flex  flex-col text-center">
-                <h1 className="text-4xl font-bold mt-20  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text text-transparent">
+                <h1 className="text-4xl font-bold mt-20  bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)]  bg-clip-text text-transparent">
                     My Project
                 </h1>
                 <p className="text-2xl mt-10 md:mx-0 mx-10 text-center">

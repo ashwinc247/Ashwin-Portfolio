@@ -66,7 +66,7 @@ export const Navbar = () => {
 
         <>
             <div className="navbar  dark:bg-[rgb(26, 27, 35)] bg-[#ffffff9d] dark:bg-[#41455adc] w-3/4 md:w-2/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex  justify-between p-5 items-center  top-0  shadow-xl z-50">
-                <div className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] bg-clip-text  text-transparent font-bold select-none">
+                <div className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text  text-transparent font-bold select-none">
                    As.
                 </div>
 
