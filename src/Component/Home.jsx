@@ -10,8 +10,44 @@ import { AnimatedGroup } from "../../components/motion-primitives/animated-group
 export const Home = () => {
     return (
         <>
+        {/* <div className=" hidden md:block absolute right-0  ">
+           <img src="/poster1.png" alt="My Image" className=" h-[90vh] w-[auto] " />
+        </div> */}
+ <AnimatedGroup
+      className='   hidden md:block absolute right-0 '
+      variants={{
+        container: {
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.05,
+            },
+          },
+        },
+        item: {
+          hidden: { opacity: 0, y: 20, filter: 'blur(10px)' },
+          visible: {
+            opacity: 1,
+            y: 20,
+            filter: 'blur(0px)',
+            transition: {
+              duration: 7,
+              type: 'spring',
+              bounce: 0.03,
+            },
+          },
+        },
+      }}
+    >
+      <img
+        src="/poster1.png"
+        className=" h-[90vh] w-[auto] "
+        alt='impressionist painting, uploaded to Cosmos'
         
-
+      />
+     
+    </AnimatedGroup>
 
 
 

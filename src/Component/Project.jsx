@@ -1,4 +1,7 @@
-import React from "react";
+
+
+
+
 import  { useState, useEffect } from "react";
 import HomeImg from "../assets/Home.png"
 import AboutImg from "../assets/About.png"
@@ -11,6 +14,9 @@ import { AnimatedGroup } from "../../components/motion-primitives/animated-group
 
 
 export const Project = () => {
+ 
+
+
 
     const projectTools = ["React.js","Tailwind CSS","Javascript","Responsive Design"]
 
