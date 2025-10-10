@@ -32,7 +32,7 @@ export const Home = () => {
             y: 20,
             filter: 'blur(0px)',
             transition: {
-              duration: 7,
+              duration: 5,
               type: 'spring',
               bounce: 0.03,
             },
