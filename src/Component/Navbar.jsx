@@ -66,20 +66,20 @@ export const Navbar = () => {
 
         <>
             <div className="navbar  dark:bg-[rgb(26, 27, 35)] bg-[#ffffff9d] dark:bg-[#41455adc] w-3/4 md:w-2/4 m-auto mt-5 sticky rounded-3xl backdrop-blur-[10px] flex  justify-between p-5 items-center  top-0  shadow-xl z-50">
-                <div className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text  text-transparent font-bold select-none">
+                <div  data-aos-delay="400" data-aos-duration="1000" className="text-4xl   bg-[linear-gradient(135deg,#3b82f6,#9333ea)] dark:bg-[linear-gradient(135deg,#4FC3F7,#B085F5)] bg-clip-text  text-transparent font-bold select-none">
                    As.
                 </div>
 
 
                 <div className="hidden md:block font-medium ">
-                    <Link to="/" className="mx-10  text-md">Home</Link>
-                    <Link to="/about" className="mx-5 text-md">About</Link>
-                    <Link to="/skill" className="mx-5 text-md">Skill</Link>
-                    <Link to="/project" className="mx-5 text-md">Project</Link>
-                    <Link to="/resume" className="mx-5 text-md" >Resume</Link>
-                    <Link to="/contact" className="mx-5 text-md ">Contact</Link>
+                    <Link data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" to="/"  className=" mx-10  text-md">Home</Link>
+                    <Link data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000" to="/about" className="mx-5 text-md">About</Link>
+                    <Link data-aos="zoom-in" data-aos-delay="900" data-aos-duration="1000" to="/skill" className="mx-5 text-md">Skill</Link>
+                    <Link data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="1000" to="/project" className="mx-5 text-md">Project</Link>
+                    <Link data-aos="zoom-in" data-aos-delay="1300" data-aos-duration="1000" to="/resume" className="mx-5 text-md" >Resume</Link>
+                    <Link data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="1000" to="/contact" className="mx-5 text-md ">Contact</Link>
                 </div>
-                <div onClick={toggle}
+                <div data-aos="zoom-in" data-aos-delay="1700" data-aos-duration="1000" onClick={toggle}
                     className="   hidden md:block rounded-xl cursor-pointer ">
                     {theme == "dark" ?
                         <svg
